@@ -1,0 +1,23 @@
+% !TEX program = xelatex
+\include{preambule}
+
+% ---------------------- Документ ----------------------
+\begin{document}
+	\include{00-title}
+
+	\normalsize
+	\setcounter{page}{5}
+
+	\pagebreak
+
+	\renewcommand{\contentsname}{\normalsize\bfseries\centering СОДЕРЖАНИЕ}
+	\small
+	\tableofcontents
+	\normalsize
+
+	\pagebreak
+	
+	\include{03-intro}
+	\include{10-analysis}
+	\include{60-bibliography}
+\end{document}
