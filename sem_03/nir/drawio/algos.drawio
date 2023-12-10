@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2023-12-10T20:11:30.083Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0" etag="XbyPPqF-2uBxfRDHUotM" version="22.1.7" type="device">
+  <diagram name="Page-1" id="4S3-3NscXAcKQnaS1862">
+    <mxGraphModel dx="1673" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8GCVn3EsIg8ccyJKekS--3" value="Начало" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--4" value="Отключить обработку прерываний" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--5" value="Сохранить регистры текущего уровня привилегий на стеке" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--6" value="Установить бит hypervisor mode в регистре System Control Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--7" value="Сохранить регистр Saved Program Status Register (SPSR) на стеке" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--8" value="Перейти в режим гипервизора с помощью команды hvc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--12" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--5" target="8GCVn3EsIg8ccyJKekS--4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--7" target="8GCVn3EsIg8ccyJKekS--5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--7" target="8GCVn3EsIg8ccyJKekS--6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--6" target="8GCVn3EsIg8ccyJKekS--8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--16" value="Конец" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="720" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--17" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--4" target="8GCVn3EsIg8ccyJKekS--3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--18" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--8" target="8GCVn3EsIg8ccyJKekS--16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--20" value="" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="123.75" width="50" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--21" value="Система с процессором ARM, выполняющаяся на уровне привелигий EL1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="126.25" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--23" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8GCVn3EsIg8ccyJKekS--3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <mxPoint x="370" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--24" value="" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="723.75" width="50" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--25" value="Система с процессором ARM, выполняющаяся на уровне привелигий EL2 (hypervisor mode)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="726.25" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8GCVn3EsIg8ccyJKekS--26" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="750" as="sourcePoint" />
+            <mxPoint x="370" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

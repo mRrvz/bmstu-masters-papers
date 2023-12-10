@@ -1,0 +1,166 @@
+<mxfile host="app.diagrams.net" modified="2023-12-10T19:42:24.481Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0" etag="uj3_DDoDx2sMkqlt1brk" version="22.1.7" type="device" pages="3">
+  <diagram name="Page-1" id="Gm40qlNiiUQH4dujVe4u">
+    <mxGraphModel dx="1422" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NMkjLVnV1A8aMu4YvvbP-1" value="Метод программной реализации доверенной среды исполнения с помощью виртуализации процессоров архитектуры ARM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NMkjLVnV1A8aMu4YvvbP-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="NMkjLVnV1A8aMu4YvvbP-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="205" as="sourcePoint" />
+            <mxPoint x="450" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NMkjLVnV1A8aMu4YvvbP-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NMkjLVnV1A8aMu4YvvbP-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="310" as="sourcePoint" />
+            <mxPoint x="630" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vH6Lh3ftuaO-XySoe9EJ-2" value="Запрос на выполнение операции в ДСИ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vH6Lh3ftuaO-XySoe9EJ-3" value="Результат выполненой операции в ДСИ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="170" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="z3sORPBP62TiJITS7hKq" name="Page-2">
+    <mxGraphModel dx="3038" dy="1223" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EWRujxVy0B7MVR5At1rH-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOhVltmyJeVCkbDUUURi-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="720" as="sourcePoint" />
+            <mxPoint x="610" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-12" value="ARM Virtualization" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EWRujxVy0B7MVR5At1rH-2">
+          <mxGeometry x="0.4935" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SOhVltmyJeVCkbDUUURi-1" value="Перевести все ядра процессора в режиме работы гипервизора" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SOhVltmyJeVCkbDUUURi-2" value="Перевести недоверенную ОС в гостевой режим исполнения" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="280" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SOhVltmyJeVCkbDUUURi-3" value="Передать гипервизору зарезервированную память" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="400" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SOhVltmyJeVCkbDUUURi-4" value="Передать управление ARM TrustZone" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="530" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SOhVltmyJeVCkbDUUURi-1" target="SOhVltmyJeVCkbDUUURi-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="430" as="sourcePoint" />
+            <mxPoint x="570" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="205" />
+              <mxPoint x="300" y="230" />
+              <mxPoint x="300" y="260" />
+              <mxPoint x="300" y="325" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOhVltmyJeVCkbDUUURi-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455" y="720" as="sourcePoint" />
+            <mxPoint x="660" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-13" value="ARM Virtualization" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EWRujxVy0B7MVR5At1rH-3">
+          <mxGeometry x="0.493" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOhVltmyJeVCkbDUUURi-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="735" y="720" as="sourcePoint" />
+            <mxPoint x="660" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-18" value="Драйвер ОС" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EWRujxVy0B7MVR5At1rH-4">
+          <mxGeometry x="0.3318" y="4" relative="1" as="geometry">
+            <mxPoint x="9" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOhVltmyJeVCkbDUUURi-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-100" y="205" as="sourcePoint" />
+            <mxPoint x="530" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-6" value="Запрос на выполнение операции в ДСИ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="170" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SOhVltmyJeVCkbDUUURi-2" target="SOhVltmyJeVCkbDUUURi-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="450" as="sourcePoint" />
+            <mxPoint x="780" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="325" />
+              <mxPoint x="600" y="390" />
+              <mxPoint x="600" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SOhVltmyJeVCkbDUUURi-3" target="SOhVltmyJeVCkbDUUURi-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="450" as="sourcePoint" />
+            <mxPoint x="780" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="445" />
+              <mxPoint x="900" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SOhVltmyJeVCkbDUUURi-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="450" as="sourcePoint" />
+            <mxPoint x="1310" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-14" value="A1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-15" value="A2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-16" value="A3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EWRujxVy0B7MVR5At1rH-17" value="A4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_u-5bjAuxPX3UXzJp1wi-1" value="Результат выполненой операции в ДСИ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="535" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_u-5bjAuxPX3UXzJp1wi-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1045" y="720" as="sourcePoint" />
+            <mxPoint x="1044.57" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_u-5bjAuxPX3UXzJp1wi-3" value="Secure Monitor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_u-5bjAuxPX3UXzJp1wi-2">
+          <mxGeometry x="0.3318" y="4" relative="1" as="geometry">
+            <mxPoint x="9" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6c-tMKbrKP3-CYWHKwMe" name="Page-3">
+    <mxGraphModel dx="2031" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
