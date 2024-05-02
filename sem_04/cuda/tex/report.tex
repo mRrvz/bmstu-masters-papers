@@ -1,0 +1,91 @@
+\documentclass[12pt, a4paper]{article}
+
+\include{preamble}
+
+\begin{document}
+
+\include{preambule}
+
+
+\begin{titlepage}
+	\noindent\begin{minipage}{0.05\textwidth}
+		\includegraphics[scale=0.3]{img/bmstu.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.85\textwidth}\raggedleft
+		\begin{center}
+			\fontsize{12pt}{0.3\baselineskip}\selectfont \textbf{Министерство науки и высшего образования Российской Федерации \\ Федеральное государственное бюджетное образовательное учреждение \\ высшего образования \\ <<Московский государственный технический университет \\ имени Н.Э. Баумана \\ (национальный исследовательский университет)>> \\ (МГТУ им. Н.Э. Баумана)}
+		\end{center}
+	\end{minipage}
+	
+	\begin{center}
+		\fontsize{12pt}{0.1\baselineskip}\selectfont
+		\noindent\makebox[\linewidth]{\rule{\textwidth}{4pt}} \makebox[\linewidth]{\rule{\textwidth}{1pt}}
+	\end{center}
+	
+	\begin{flushleft}
+		\fontsize{12pt}{0.8\baselineskip}\selectfont 
+		
+		ФАКУЛЬТЕТ \textbf{<<\textbf{Информатика и системы управления}>> \hfill}
+		
+		КАФЕДРА \textbf{\mbox{\hspace{4mm}} <<\textbf{Программное обеспечение ЭВМ и информационные технологии}>> \hfill}
+	\end{flushleft}
+	
+	\vfill
+	
+	\begin{center}
+		\fontsize{20pt}{\baselineskip}\selectfont
+		
+		\textbf{{Отчет по лабораторной работе}}
+		
+		\textbf{{по курсу}}
+		
+		\textbf{<<Программирование специализированных вычислительных устройств>>}
+	\end{center}
+	
+		\fontsize{18pt}{0.6cm}\selectfont 
+		""\newline\newline\newline\newline\newline\newline\newline
+		\textbf{Студент:} Романов А. В.\newline
+		\textbf{Преподаватель:} Ковтушенко А. П.\newline
+		\textbf{Группа:} ИУ7-42М\newline
+	
+	\vfill
+	
+	\begin{table}[h!]
+		\fontsize{12pt}{0.7\baselineskip}\selectfont
+
+		
+		\vspace{\baselineskip}
+		
+	\end{table}
+	
+	\vfill
+	
+	\begin{center}
+		\normalsize \textit{\textbf{2024} г.}
+	\end{center}
+\end{titlepage}
+	
+\section{Постановка задачи}
+
+В ходе выполнения лабораторной работы требуется проанализироватьзависимость времени работы программы, выполняющей умножение матриц припомощи технологии CUDA в зависимости от размеров матриц, соотношения ихсторон и их расположения в памяти (4 случая).Программа выполняет умножение матриц, при этом поддерживает 4варианта расположения матриц в памяти. Варианты отличаются возможнымтранспонированием одной или обоих матриц.
+
+\section{Результаты}
+
+В начале выполнялось тестирование для квадратных матриц. Нарисунке 1 приведён график зависимости ускорения вычислений умножения взависимости от размеров квадратных матриц с учётом различия расположенияматриц в памяти.Далее различающиеся длины сторон матриц были зафиксированы назначении 1024, и производилось изменение общей стороны матрицы. Графикзависимости ускорения вычислений умножения в зависимости от длины общейстороны с учётом различия расположения матриц в памяти приведён нарисунке 2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/1.pdf}
+	\caption{Зависимость ускорения от размера квадратной матрицы}
+	\label{img:1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/2.pdf}
+	\caption{Зависимость ускорения от длинны общей стороны}
+	\label{img:2}
+\end{figure}
+	
+\end{document}
